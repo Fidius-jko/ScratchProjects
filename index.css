@@ -1,31 +1,82 @@
 body {
-	font-size: 110%;
+	background-color: rgb(192, 160, 116);
 }
 
-#head h1 {
+
+
+div.TableContainer {
+	display: table;
+	border-spacing: 10px;
+}
+
+div.TableRow {
+	display: table-row;
+}
+div.TableColumn {
+	display: table-column;
+}
+
+nav {
+	background-color: bisque;
+	margin: 10px 10px 0px 10px;
+}
+
+nav ul {
+	margin: 0px;
+	list-style: none;
+	padding: 5px 0px 5px 0px;
+}
+
+nav ul li {
+	display: inline;
+	padding: 5px 10px;
+}
+
+nav ul li a:link, nav ul a:visited {
+	color:black;
+	text-decoration: none;
+	font-weight: bold;
+	border-bottom: none;
+}
+
+nav ul li.selected {
+	background-color: azure;
+}
+
+#blog {
+	display: table-cell;
+	background-color: white;
+	padding: 5px 10px;
+	width: 400px;
+	vertical-align: top;
+}
+
+section#main {
+	display: table-cell;
+	width: 700px;
+	background-color: white;
+	padding: 5px 10px;
+	vertical-align: top;
+}
+section#main h1 {
 	font-style: italic;
 }
 
-p {
-	font-size: 100%;
+section#projects {
+	display: table-cell;
+	background-color: white;
+	padding: 5px 10px;
+	vertical-align: top;
 }
 
-#projects {
-	margin: 20px 10px 20px 0px;
-	border: solid;
-	width: 250px;
+footer {
 	text-align: center;
-	border-top-left-radius: 0px;
-	border-top-right-radius: 40px;
-	border-bottom-left-radius: 40px;
-	border-bottom-right-radius: 40px;
+	color: white;
+	margin: 10px 10px 0px 10px;
 }
-
-#creators {
-	margin: 20px 20px 20px 0px;
-	border: solid;
-	width: 250px;
-	float: right;
-	text-align: left;
-	padding: 1px 0px 0px 20px
+section.game {
+	display: table-cell;
+	background-color: white;
+	padding: 5px 10px;
+	vertical-align: top;
 }
